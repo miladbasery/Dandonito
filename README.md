@@ -76,13 +76,7 @@ VITE_API_BASE_URL=http://localhost:8080
 ```
 3. Execution Infrastructure
 ```
-# Launch the local development server with active Hot Module Replacement (HMR)
 npm run dev
-
-# Execute code linting and code-style verification routines
 npm run lint
-
-# Compile and optimize static distribution assets for production deployment
 npm run build
-Once the development server initializes, the interface will accept local inbound browser requests at http://localhost:5173.
 ```
