@@ -1,5 +1,5 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 
@@ -31,12 +31,17 @@ share/wheels/
 /var/lib/postgresql/data
 db_data/
 
-# Storage / User Uploads & Media roots
+# Storage / User Uploads & Media roots (Scoped for root and src structure)
 media/
 avatar/
 medical_history/
 static_root/
 staticfiles/
+src/media/
+src/avatar/
+src/medical_history/
+src/static_root/
+src/staticfiles/
 
 # Logs and databases
 *.log
@@ -46,6 +51,7 @@ db.sqlite3-journal
 
 # Shared environment structures / Secrets
 .env
+src/.env
 .venv
 env/
 venv/
