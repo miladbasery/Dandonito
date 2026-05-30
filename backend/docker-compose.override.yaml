@@ -1,0 +1,12 @@
+services:
+  dandonito_app:
+    image: dandonito_app
+    build:
+      args:
+        - DOCKER_REG=$DOCKER_REG
+    volumes:
+      - ${SOURCE:-./src}:/home/Dandonito_app
+    environment:
+      DEBUG: "True"
+      APP_MODE: "Development"
+      ALLOWED_HOSTS: "localhost 0.0.0.0 *"
